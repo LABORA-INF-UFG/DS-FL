@@ -1,0 +1,4 @@
+FROM python:3.9.16
+
+RUN pip install flwr numpy pandas tensorflow tensorflow-cpu
+CMD ["python", "-u", "/home/client.py"]

@@ -1,0 +1,421 @@
+version: "3"
+
+services:
+
+ server:
+  container_name: server
+  build:
+   context: ./server
+   dockerfile: Dockerfile-Server
+  volumes:
+   - ./server/py:/home
+  networks:
+   - default
+
+
+ client_1:
+  container_name: client_1
+  environment:
+   - CLIENT_ID=1
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_2:
+  container_name: client_2
+  environment:
+   - CLIENT_ID=2
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_3:
+  container_name: client_3
+  environment:
+   - CLIENT_ID=3
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_4:
+  container_name: client_4
+  environment:
+   - CLIENT_ID=4
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_5:
+  container_name: client_5
+  environment:
+   - CLIENT_ID=5
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_6:
+  container_name: client_6
+  environment:
+   - CLIENT_ID=6
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_7:
+  container_name: client_7
+  environment:
+   - CLIENT_ID=7
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_8:
+  container_name: client_8
+  environment:
+   - CLIENT_ID=8
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_9:
+  container_name: client_9
+  environment:
+   - CLIENT_ID=9
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_10:
+  container_name: client_10
+  environment:
+   - CLIENT_ID=10
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_11:
+  container_name: client_11
+  environment:
+   - CLIENT_ID=11
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_12:
+  container_name: client_12
+  environment:
+   - CLIENT_ID=12
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_13:
+  container_name: client_13
+  environment:
+   - CLIENT_ID=13
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_14:
+  container_name: client_14
+  environment:
+   - CLIENT_ID=14
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_15:
+  container_name: client_15
+  environment:
+   - CLIENT_ID=15
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_16:
+  container_name: client_16
+  environment:
+   - CLIENT_ID=16
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_17:
+  container_name: client_17
+  environment:
+   - CLIENT_ID=17
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_18:
+  container_name: client_18
+  environment:
+   - CLIENT_ID=18
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_19:
+  container_name: client_19
+  environment:
+   - CLIENT_ID=19
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_20:
+  container_name: client_20
+  environment:
+   - CLIENT_ID=20
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_21:
+  container_name: client_21
+  environment:
+   - CLIENT_ID=21
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_22:
+  container_name: client_22
+  environment:
+   - CLIENT_ID=22
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_23:
+  container_name: client_23
+  environment:
+   - CLIENT_ID=23
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
+
+
+ client_24:
+  container_name: client_24
+  environment:
+   - CLIENT_ID=24
+  build:
+   context: ./client
+   dockerfile: Dockerfile-Client
+  volumes:
+   - ./client/py:/home
+  networks:
+   - default
+  deploy:
+   resources:
+    limits:     
+     memory: 1024M
